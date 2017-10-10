@@ -15,7 +15,11 @@ WaveHC wave;      // This is the only wave (audio) object, since we will only pl
 
 
 void setup() {
+    Serial.begin(9600);
     
+    Serial.println("Woody's voicebox");
+    Serial.println("Files found:");
+    root.ls();
 }
 
 void loop() {

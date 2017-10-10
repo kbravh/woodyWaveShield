@@ -14,7 +14,9 @@ void setup() {
 void loop() {
     
 }
-
+/*
+ * Play the referenced wav file
+ */
 void playWav(char *name) {
   //stop a wave file if it's already playing
   if (wave.isplaying) {
@@ -36,7 +38,4 @@ void playWav(char *name) {
   
   //plays file until it finishes without interruptions
   while (wave.isplaying);
-  
-  // see if an error occurred while playing
-  sdErrorCheck();
 }

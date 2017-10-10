@@ -1,7 +1,10 @@
 # woodyWaveShield
 :Author: operaartificis
+
 :Email: karey.higuera@gmail.com
+
 :Date: 08/10/2017
+
 :License: Public Domain
 
 An arduino sketch for a wave shield to play Woody's catchphrases. 

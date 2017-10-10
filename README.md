@@ -9,3 +9,4 @@ The wave shield will be programmed to play one of Woody's six catchphrases each 
 The files are stored on and read from an SD card, then interpreted by the wave shield and output through an amplifier to a small speaker. 
 
 Download and include the WaveHC library (https://github.com/adafruit/WaveHC) or use the edited version included in this project. I've changed the ---------- setting in the ---------- file to increase startup speed since continuous play won't be necessary. 
+

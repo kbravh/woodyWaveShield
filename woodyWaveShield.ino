@@ -13,18 +13,32 @@ FatReader root;   // This holds the information for the volume's root directory
 FatReader file;   // This represents the WAV file
 WaveHC wave;      // This is the only wave (audio) object, since we will only play one at a time
 
+const char inputSwitchPin = 8;   //input pin for pullstring switch
+char switchState;                //whether or not switch is active
 
 void setup() {
     Serial.begin(9600);
     
-    Serial.println("Woody's voicebox");
+    Serial.println("Woody's Voicebox");
     Serial.println("Files found:");
     root.ls();
 }
 
+
 void loop() {
-    
+    switchState = digitalRead(inputSwitchPin);
+     
+    /*
+     * Code is not scalable. Files must be named with a specific
+     * number, and the number of files cannot be increased. Could
+     * possibly implement code from openByIndex?
+     */
+    if(switchState==1){
+        char phrase = random(0,6);
+        playWav(char);
+    }
 }
+
 /*
  * Play the referenced wav file
  */

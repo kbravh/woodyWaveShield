@@ -7,6 +7,13 @@
 #include <WaveHC.h>
 #include <WaveUtil.h>
 
+SdReader card;    // This holds the information for the card
+FatVolume vol;    // This holds the information for the partition on the card
+FatReader root;   // This holds the information for the volume's root directory
+FatReader file;   // This represents the WAV file
+WaveHC wave;      // This is the only wave (audio) object, since we will only play one at a time
+
+
 void setup() {
     
 }

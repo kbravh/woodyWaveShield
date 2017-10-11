@@ -35,7 +35,7 @@ void loop() {
      */
     if(switchState==1){
         char phrase = random(0,6);
-        playWav(char);
+        playWav(phrase);
     }
 }
 

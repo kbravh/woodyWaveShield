@@ -42,7 +42,7 @@ void loop() {
 /*
  * Play the referenced wav file
  */
-void playWav(char *name) {
+void playWav(char name) {
   //stop a wave file if it's already playing
   if (wave.isplaying) {
     wave.stop(); 

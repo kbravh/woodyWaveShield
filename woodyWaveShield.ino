@@ -34,7 +34,7 @@ void loop() {
      * possibly implement code from openByIndex?
      */
     if(switchState==1){
-        char phrase = random(0,6);
+        char phrase = random(0,6); //0-5, Random() is non-inclusive
         playWav(phrase);
     }
 }

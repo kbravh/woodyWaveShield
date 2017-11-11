@@ -1,8 +1,8 @@
 /*
- * Woody's pullstring voice box. Each time the Arduino is triggered, 
- * presumably by the pullstring on Woody's back, a random catchphrase 
- * will be selected and played.
- */
+Woody's pullstring voice box. Each time the Arduino is triggered, 
+presumably by the pullstring on Woody's back, a random catchphrase 
+will be selected and played.
+*/
 
 #include <WaveHC.h>
 #include <WaveUtil.h>
